@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Move File Upload</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <
+    <div class="chess-icons-container">
+        <span class="icon-red">♞</span>
+        <span class="icon-yellow">👑</span>
+        <span class="icon-blue">♜</span>
+    </div>
+
+    <h2>Submit Data</h2>
+    <p class="subtitle">Upload your move file and provide your email address.</p>
+    
+    <form id="uploadForm">
+    
+        <div class="form-group">
+            <label for="uploadFile">Select move file (.txt):</label>
+            <input type="file" id="uploadFile" name="uploadFile" accept=".pgn,.fen,.txt" required>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submitBtn">Submit</button>
+    </form>
+    
+    <!-- Status message for the user -->
+    <div id="statusMessage" class="hidden"></div>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
